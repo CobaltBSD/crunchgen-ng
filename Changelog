@@ -1,0 +1,8 @@
+1.1 - Apr 6 2023
+* Makefile support for non-gcc compilers
+* Added this changelog
+
+1.0 - Mar 25 2023
+* Initial release
+* Added example subdirectory
+* Various compatibility fixes for building and running outside of a BSD

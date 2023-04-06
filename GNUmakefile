@@ -1,5 +1,5 @@
 all: crunched_skel.c
-	gcc -g -Wall crunchgen.c crunched_skel.c crunchide.c elf_hide.c mangle.c -o crunchgen -Wno-format-truncation -lbsd
+	$(CC) -g -Wall crunchgen.c crunched_skel.c crunchide.c elf_hide.c mangle.c -o crunchgen -Wno-format-truncation -lbsd
 
 crunched_skel.c: crunched_main.c
 	./mkskel.sh crunched_main.c > crunched_skel.c
